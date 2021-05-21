@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Edson
+
 // estrutura 
 struct arvore{
     char item;
@@ -20,11 +22,11 @@ void arvore_Construtor(){
 
 //insere elementos na arvore
 void arvore_Inserir(char letra, arvore *&tNO){
-    if(tNO==NULL){ // verifica se é = a Nulo
+    if(tNO==NULL){ // verifica se Ã© = a Nulo
         if((tNO=(arvore*)malloc(sizeof(arvore)))==NULL); // caso seja a arvore ira receber Nulo
         else{
             tNO->item=letra; // endereco do item = letra;
-            tNO->esquerda=tNO->direita=NULL; // edereco da esquerda recebe o endereco da direita que é = Nulo
+            tNO->esquerda=tNO->direita=NULL; // edereco da esquerda recebe o endereco da direita que Ã© = Nulo
             contador++; //adiciona um numero no contador;
         }
     }
